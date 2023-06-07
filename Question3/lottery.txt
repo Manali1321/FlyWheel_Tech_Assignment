@@ -1,0 +1,18 @@
+Intialize the grand price count and secondary price count to 0.
+Intialize contest day to 1.
+
+Create a function instant win which will run on click of play button.
+
+function check day()
+declare current date.
+new date is function of now();
+if new date > current date then increase contest day +1 and which reset grand price count, secondary price count.
+
+Check if contest day <= 30 than call check winner function Else "Contest has ended".
+
+function Check winner()
+Generate random number between 1 to 10,000
+Create a condition to check grandprice winner; IF random number === 1 && grand price count === 0 then increase grand price count to (grandpricecount++) 1 and show grand price winning message
+Create a else if condition to check secondary winner; ELSE IF random number <=11 && secondary price count <10 then increase secondary price count to (secondarypricecount++) 1 and show secondary price winning message
+
+Else Show message "You didn't win this time".
